@@ -1,7 +1,7 @@
 import React from 'react';
 
-function article(){
-    const articleTitle = 'single Article';
+function Article(){
+    const articleTitle = 'singleArticle';
     return (
         <div>
             <h1>{articleTitle}</h1>
@@ -9,4 +9,4 @@ function article(){
     );
 }
 
-export default article;
+export default Article;
