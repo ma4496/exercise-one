@@ -1,7 +1,6 @@
 import{ BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import article from "./container/Article";
 import articleListing from "./container/ArticleListing";
-import logo from './logo.svg';
 import './App.css';
 
 import Article from "./container/Article";
@@ -11,8 +10,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/Article">
-
+        <Route path="/article/:id">
+          <Article />
         </Route>
       </Switch>
     </Router>
