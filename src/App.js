@@ -13,6 +13,9 @@ function App() {
         <Route path="/article/:id">
           <Article />
         </Route>
+        <Route path="/">
+          <ArticleListing />
+        </Route>
       </Switch>
     </Router>
   );

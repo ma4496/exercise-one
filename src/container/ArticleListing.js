@@ -1,16 +1,16 @@
 import React from 'react';
-import articleCard from "../components/ArticleCard";
+import ArticleCard from "../components/ArticleCard";
 import Data from '../components/data.json'
 
-function articleListing(){
+function ArticleListing(){
     console.log(Data);
 
     const articlesTitle = "articles";
     return(
         <div className= "PageWrapper">
-            <h2 className="HeaderOneStyle">{articleTitle}</h2>
+            <h2 className="HeaderOneStyle">{articlesTitle}</h2>
             {Data.map((article, key) => (
-            <ArticleCard key={key}/>
+            <ArticleCard article={article} key={key}/>
             ))}
         </div>
     )
